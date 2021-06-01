@@ -4,11 +4,21 @@
     box-sizing: border-box;
 }
 
-.inicio{
+.splash{
+    position: relative;
     background-image: url(../image/Intro2.jpg);
     padding-bottom: 100vh;
     background-position: center;
+    
+   
 
+}
+
+.tituloIntro{
+    position: absolute;
+    padding-top: 60vh;
+    color: black;
+    
 }
 
 .blancoPuro{
@@ -30,6 +40,18 @@
     padding-bottom: 2rem;
 }
 
+.flex2{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+.placeholder{
+    max-width: fit-content;
+}
+
 .fotoServicio{
     max-width: 100%;
     padding-left: 4rem;
@@ -37,6 +59,11 @@
     padding-right: 4rem;
     padding-bottom: 0.5rem;
     
+}
+
+.socialMedia{
+width: 4rem;
+height: 4rem;
 }
 
 .titutoServicio{
@@ -61,6 +88,7 @@
 .footerContacto{
     background-color: #242424;
     color: #bebec0;
+    padding-top: 1rem;
 }
 
 .textoNosotras{
