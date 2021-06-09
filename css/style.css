@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .splash{
@@ -44,8 +45,8 @@
     width: 4rem;
     height: 4rem;
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
     z-index: 100;
 }
 
@@ -70,10 +71,7 @@
     
 }
 
-.socialMedia{
-width: 4rem;
-height: 4rem;
-}
+
 
 .titutoServicio{
     margin: 0 auto;
@@ -84,9 +82,10 @@ height: 4rem;
     max-width: 100%;   
 }
  .tituloArea{
-   display: inline-block;
+   display: flex;
+   justify-content: center;
     padding-top: 70%;
-    text-align: justify;
+    text-align: center;
  }
 
  .responsive{
@@ -94,11 +93,7 @@ height: 4rem;
   height: auto;
  }
 
-.footerContacto{
-    background-color: #242424;
-    color: #bebec0;
-    padding-top: 1rem;
-}
+
 
 .textoNosotras{
     text-align: justify;
@@ -112,6 +107,11 @@ height: 4rem;
 	align-items: center;
 	align-content: center
     
+}
+.footerContacto{
+    background-color: #242424;
+    color: #bebec0;
+    padding-top: 1rem;
 }
 
 
@@ -165,3 +165,72 @@ height: 4rem;
     color: white;
     transform: rotateY(180deg);
 }
+#formulario{
+    background-image: url(../image/derecho_opacidad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    padding: 4rem 0;
+
+}
+.input{
+margin: 2rem;
+text-align: center;
+display: flex;
+align-items: center;
+}
+.enviar{
+    margin: 0 auto;
+}
+.social{
+text-align: center;
+display: flex;
+justify-content: center;
+margin-bottom: 2.7rem;
+
+}
+.socialMedia{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.25rem 1.5rem;
+    }
+
+.contactos{
+    margin: 0.5rem;
+}
+
+.contactos p{
+    margin:0.1rem
+}
+.dataContact{
+    display: flex;
+    align-items: center;
+}
+.logoContact{
+    
+    width: 2rem;
+   
+   
+}
+
+@media (min-width: 992px) {
+    #servicios{
+        height: 100vh;
+
+    }
+   
+   
+  
+  }
+  @media (max-width: 576px) {
+      .fotoServicio{
+          width: 85%;
+          margin: 5%;
+          
+      }
+
+  }
+
+  #areas{
+      padding: 5rem 0;
+  }
+

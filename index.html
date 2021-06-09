@@ -42,30 +42,32 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
   <title>Abg. Yamila Di Bernardo | Estudio Jurídico</title>
- 
-<!--  script para la integracion con el servicio de mensajeria -->
+
+  <!--  script para la integracion con el servicio de mensajeria -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
   <script type="text/javascript">
-      (function() {
-          // https://dashboard.emailjs.com/admin/integration
-          emailjs.init("user_8hh6FLK7d9rzIZ0HUmeZW");
-      })();
+    (function () {
+      // https://dashboard.emailjs.com/admin/integration
+      emailjs.init("user_8hh6FLK7d9rzIZ0HUmeZW");
+    })();
   </script>
   <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('contact-form').addEventListener('submit', function(event) {
-              event.preventDefault();
-              // generate a five digit number for the contact_number variable
-              this.contact_number.value = Math.random() * 100000 | 0;
-              // these IDs from the previous steps
-              emailjs.sendForm('service_9bt0ty8', 'template_9iqrtrt', this)
-                  .then(function() {
-                      console.log('SUCCESS!');
-                  }, function(error) {
-                      console.log('FAILED...', error);
-                  });
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('service_9bt0ty8', 'template_9iqrtrt', this)
+          .then(function () {
+            alert("Su mensaje ha sido enviado con éxito.");
+            console.log('SUCCESS!');
+          }, function (error) {
+            alert("Por favor, revise su dirección de correo e intente nuevamente");
+            console.log('FAILED...', error);
           });
-      }
+      });
+    }
   </script>
 
 
@@ -117,7 +119,7 @@
 
     </section>
 
-    </div>
+    <!-- </div> -->
 
   </header>
   <!-- /////////////////////////////////////////////    MAIN     ///////////////////////////////////////////////////// -->
@@ -128,12 +130,12 @@
     <section class="nosotras">
       <div class="container">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-12 col-sm-12 col-md-6">
             <div class="contenedorFotoNosotras">
-              <img src="image/yami3.jpg" alt="modelo de portada" class="responsive">
+              <img src="image/dra_Yamila.jpeg" alt="modelo de portada" class="responsive">
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-12 col-sm-12 col-md-6">
             <div class="contenedorFotoNosotras">
               <h2>Acerca de mí</h2>
               <p class="textoNosotras">¡Hola! Mi nombre es Yamila Di Bernardo.</p>
@@ -156,7 +158,7 @@
         <h3 class="areasH3">Áreas de práctica</h3>
         <p class="areasH3">Amplia experiencia y enfoque en Derecho Civil</p>
         <div class="row">
-          <div class="col-sm">
+          <div class="col-12 col-sm-12 col-md-4">
 
             <div class="flip-card">
               <div class="flip-card-inner">
@@ -170,10 +172,11 @@
             </div>
 
             <h4 class="tituloArea">Contratos</h4>
-            <p>-Asesoramiento precontractual y postcontractual en todos los sectores.</p>
-            <p>-Redacción de contratos paritarios y realización de trámites pertinentes.</p>
+            <p>-Asesoramiento precontractual y postcontractual.</p>
+            <p>-Redacción de contratos</p>
+            <p>-Realización de trámites pertinentes.</p>
           </div>
-          <div class="col-sm">
+          <div class="col-12 col-sm-12 col-md-4">
 
             <div class="flip-card">
               <div class="flip-card-inner">
@@ -192,7 +195,7 @@
             <p>-Procesos de divorcios y alimentarios.</p>
 
           </div>
-          <div class="col-sm">
+          <div class="col-12 col-sm-12 col-md-4">
 
             <div class="flip-card">
               <div class="flip-card-inner">
@@ -223,15 +226,15 @@
       <p class="areasH3">Aquí encontrarás una muestra de los servicios prestados</p>
       <div class="container">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-12 col-sm-6 col-md-3">
             <img class="fotoServicio" src="image/entrevista.svg" alt="entrevista">
             <h4 class="titutoServicio">-Entrevistas presenciales</h4>
           </div>
-          <div class="col-sm">
+          <div class="col-12 col-sm-6 col-md-3">
             <img class="fotoServicio" src="image/Asesoria.svg" alt="Asesoria">
             <h4 class="titutoServicio">-Entrevistas virtuales</h4>
           </div>
-          <div class="col-sm">
+          <div class="col-12 col-sm-6 col-md-3">
             <img class="fotoServicio" src="image/escolar.svg" alt="apoyo escolar">
             <h4 class="titutoServicio">-Clases particulares de Derecho y materias afines</h4>
             <h4 class="titutoServicio">-Revisión de trabajos prácticos</h4>
@@ -241,7 +244,7 @@
             <img class="fotoServicio" src="image/trabajoAcade.svg" alt="trabajos academicos">
             <h4 class="titutoServicio">Revision de trabajos academicos.</h4>
           </div> -->
-          <div class="col-sm">
+          <div class="col-12 col-sm-6 col-md-3">
             <img class="fotoServicio" src="image/mediar.svg" alt="Mediaciones">
             <h4 class="titutoServicio">-Mediaciones privadas</h4>
             <h4 class="titutoServicio">-Patrocinio letrado en mediaciones prejudiciales obligatorias</h4>
@@ -270,52 +273,26 @@
 
         <div class="row">
           <div class="col-md-6 offset-md-4">
-            <h5>Realiza tu consulta</h5>
-            <div class="form-row">
+            <h3>Realiza tu consulta</h3>
+            <div class="form-row allform">
               <div class="col-md-6 mb-3">
-            <form id="contact-form">
-              <input type="hidden" name="contact_number">
-              <label></label>
-              <input type="text" name="user_name" class="form-control" placeholder="Nombre y apellido">
-              <label></label>
-              <input type="email" name="user_email" class="form-control" placeholder="Correo electronico">
-              <label></label>
-              <textarea name="message" class="form-control"  rows="3" placeholder="Mensaje"></textarea>
-              <input type="submit" class="btn btn-primary" value="Send">
-          </form>
-          </div>
-        </div>
-            
-            
-            
-            
-            
-            
-<!--             
-            <form class="needs-validation" novalidate>
-              
-                  <label for="validationCustom01"></label>
-                  <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre y apellido"
-                    required>
-
-                  <label for="validationCustom01"></label>
-                  <input type="text" class="form-control" id="validationCustom01" placeholder="Correo electronico"
-                     required>
-
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
+                <form id="contact-form">
+                  <input type="hidden" name="contact_number">
+                  <label></label>
+                  <input type="text" name="user_name" class="form-control" placeholder="Nombre y apellido">
+                  <label></label>
+                  <input type="email" name="user_email" class="form-control" placeholder="Correo electrónico">
+                  <label></label>
+                  <textarea name="message" class="form-control" rows="3" placeholder="Mensaje"></textarea>
+                  <div class="input">
+                    <input type="submit" class="btn btn-primary enviar" value="Enviar">
                   </div>
-                  <button class="btn btn-primary" type="submit">Enviar</button>
-                </div>
-
-
-              </div> -->
+                </form>
+              </div>
+            </div>
           </div>
-
         </div>
-
-
+      </div>
     </section>
 
 
@@ -333,20 +310,20 @@
       <div class="row">
         <div class="col-sm">
 
-          <img src="image/logoBlack50.jpg" alt="logo en negro" srcset="">
+          <img src="image/logoBlack50.jpg" alt="logo en negro">
 
           <div class="container">
             <div class="row">
-              <div class="col-sm">
+              <div class="col-sm d-flex justify-content-start dataContact">
 
-                <img class="placeholder socialMedia" src="image/placeholder.svg" alt="placeholder" srcset="">
-              </div>
-              <div class="col-sm">
-
+                <img class="logoContact" src="image/placeholder.svg" alt="logo contacto">
+                <div class="contactos">
                 <p>Calle 19 N° 1174</p>
                 <p>Las Parejas - Santa Fe</p>
-
               </div>
+              </div>
+
+                  
             </div>
           </div>
         </div>
@@ -361,34 +338,34 @@
 
           <div class="container">
             <div class="row">
-              <div class="col-sm">
-                <a href="https://es-la.facebook.com/"><img class="socialMedia" src="image/facebook.svg"
-                    alt="logo facebook"></a>
-
-              </div>
-              <div class="col-sm">
-                <a href="https://www.instagram.com/?hl=es-la"><img class="socialMedia" src="image/instagram.svg"
+              
+           
+              <div class="col-sm social">
+                <a href="https://es-la.facebook.com/" target="_blank"><img class="socialMedia" src="image/facebook.svg"
+                  alt="logo facebook"></a>
+                <a href="https://www.instagram.com/?hl=es-la" target="_blank"><img class="socialMedia" src="image/instagram.svg"
                     alt="logo instagram"></a>
-
-              </div>
-              <div class="col-sm">
-                <a href="https://twitter.com/"><img class="socialMedia" src="image/gorjeo.svg" alt="logo twitter"></a>
+                <a href="https://linkedin.com/" target="_blank"><img style="background-color: whitesmoke; border-radius: 10px;"
+                    class="socialMedia" src="image/linkedin.svg" alt="logo linkedin"></a>
 
               </div>
             </div>
           </div>
+         
           <div class="container">
             <div class="row">
-              <div class="col-sm">
+              <div class="col-sm d-flex justify-content-center dataContact">
 
-                <img class="socialMedia" src="image/clock.svg" alt="reloj" srcset="">
+                <img class="logoContact" src="image/contacto.svg" alt="logo contacto">
+                <div class="contactos">
+                <p>+54 9 3471 55 2284</p>
+                <p>yamiladibernardo@gmail.com</p>
               </div>
-              <div class="col-sm">
-
-                <p>Lun a Vie: 9 a 19.</p>
-                <p>Sab, Dom, y feriados: cerrados.</p>
               </div>
+            
             </div>
+
+            
           </div>
 
         </div>
